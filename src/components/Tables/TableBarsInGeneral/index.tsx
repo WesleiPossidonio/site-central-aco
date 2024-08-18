@@ -1,0 +1,251 @@
+
+import { TableContainer, StyledTable, TableHeader, TableRow, TableCell } from './styled';
+
+export const TableBarsInGeneral = () => {
+  return (
+    <TableContainer>
+    <StyledTable>
+      <thead>
+        <TableRow>
+          <TableHeader rowSpan={2}>ESPESSURA</TableHeader>
+          <TableHeader rowSpan={2}>LARGURA</TableHeader>
+          <TableHeader colSpan={9}>PESOS EM kg/m</TableHeader>
+          <TableHeader rowSpan={2}>TAMANHO PADRÃO</TableHeader>
+        </TableRow>
+        <TableRow>
+          <TableHeader>1/8”</TableHeader>
+          <TableHeader>3/16”</TableHeader>
+          <TableHeader>1/4”</TableHeader>
+          <TableHeader>5/16”</TableHeader>
+          <TableHeader>3/8”</TableHeader>
+          <TableHeader>1/2”</TableHeader>
+          <TableHeader>5/8”</TableHeader>
+          <TableHeader>3/4”</TableHeader>
+          <TableHeader>1”</TableHeader>
+        </TableRow>
+      </thead>
+      <tbody>
+        <TableRow>
+          <TableCell rowSpan={2}>3/8”</TableCell>
+          <TableCell>9.53</TableCell>
+          <TableCell isHighlight>0.24</TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell rowSpan={13} isStandardSize>6m</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>12.70</TableCell>
+          <TableCell>0.31</TableCell>
+          <TableCell>0.47</TableCell>
+          <TableCell>0.63</TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell rowSpan={2}>1/2”</TableCell>
+          <TableCell>15.87</TableCell>
+          <TableCell></TableCell>
+          <TableCell>0.39</TableCell>
+          <TableCell>0.59</TableCell>
+          <TableCell>0.79</TableCell>
+          <TableCell>0.99</TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>19.05</TableCell>
+          <TableCell></TableCell>
+          <TableCell>0.47</TableCell>
+          <TableCell>0.71</TableCell>
+          <TableCell>0.94</TableCell>
+          <TableCell>1.20</TableCell>
+          <TableCell>1.42</TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell rowSpan={2}>5/8”</TableCell>
+          <TableCell>22.25</TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell>0.59</TableCell>
+          <TableCell>0.94</TableCell>
+          <TableCell>1.20</TableCell>
+          <TableCell>1.47</TableCell>
+          <TableCell>1.89</TableCell>
+          <TableCell>2.36</TableCell>
+          <TableCell>2.83</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>25.40</TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell>0.63</TableCell>
+          <TableCell>0.99</TableCell>
+          <TableCell>1.26</TableCell>
+          <TableCell>1.58</TableCell>
+          <TableCell>2.00</TableCell>
+          <TableCell>2.52</TableCell>
+          <TableCell>3.16</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell rowSpan={2}>3/4”</TableCell>
+          <TableCell>28.58</TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell>0.79</TableCell>
+          <TableCell>1.20</TableCell>
+          <TableCell>1.47</TableCell>
+          <TableCell>1.73</TableCell>
+          <TableCell>2.28</TableCell>
+          <TableCell>2.83</TableCell>
+          <TableCell>3.42</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>31.75</TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell>0.94</TableCell>
+          <TableCell>1.26</TableCell>
+          <TableCell>1.58</TableCell>
+          <TableCell>2.10</TableCell>
+          <TableCell>2.62</TableCell>
+          <TableCell>3.20</TableCell>
+          <TableCell>4.02</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell rowSpan={2}>7/8”</TableCell>
+          <TableCell>34.93</TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell>0.94</TableCell>
+          <TableCell>1.42</TableCell>
+          <TableCell>1.73</TableCell>
+          <TableCell>2.10</TableCell>
+          <TableCell>2.83</TableCell>
+          <TableCell>3.54</TableCell>
+          <TableCell>4.35</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>38.10</TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell>1.10</TableCell>
+          <TableCell>1.57</TableCell>
+          <TableCell>1.89</TableCell>
+          <TableCell>2.36</TableCell>
+          <TableCell>3.00</TableCell>
+          <TableCell>3.70</TableCell>
+          <TableCell>4.61</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell rowSpan={2}>1”</TableCell>
+          <TableCell>41.28</TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell>1.10</TableCell>
+          <TableCell>1.57</TableCell>
+          <TableCell>2.10</TableCell>
+          <TableCell>2.62</TableCell>
+          <TableCell>3.42</TableCell>
+          <TableCell>4.22</TableCell>
+          <TableCell>5.16</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>44.45</TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell>1.26</TableCell>
+          <TableCell>1.73</TableCell>
+          <TableCell>2.36</TableCell>
+          <TableCell>2.83</TableCell>
+          <TableCell>3.70</TableCell>
+          <TableCell>4.61</TableCell>
+          <TableCell>5.73</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>1 1/8”</TableCell>
+          <TableCell>47.63</TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell>1.89</TableCell>
+          <TableCell>2.36</TableCell>
+          <TableCell>2.83</TableCell>
+          <TableCell>3.70</TableCell>
+          <TableCell>4.61</TableCell>
+          <TableCell>5.73</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>1 1/4”</TableCell>
+          <TableCell>50.80</TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell>2.10</TableCell>
+          <TableCell>2.62</TableCell>
+          <TableCell>3.42</TableCell>
+          <TableCell>4.22</TableCell>
+          <TableCell>5.39</TableCell>
+          <TableCell>6.70</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>1 3/8”</TableCell>
+          <TableCell>53.98</TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell>2.28</TableCell>
+          <TableCell>2.83</TableCell>
+          <TableCell>3.54</TableCell>
+          <TableCell>4.35</TableCell>
+          <TableCell>5.57</TableCell>
+          <TableCell>6.86</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>1 1/2”</TableCell>
+          <TableCell>57.15</TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell></TableCell>
+          <TableCell>2.36</TableCell>
+          <TableCell>2.95</TableCell>
+          <TableCell>3.70</TableCell>
+          <TableCell>4.61</TableCell>
+          <TableCell>5.73</TableCell>
+          <TableCell>7.17</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>6”</TableCell>
+          <TableCell>152.40</TableCell>
+          <TableCell></TableCell>
+          <TableCell>3.79</TableCell>
+          <TableCell>5.59</TableCell>
+          <TableCell>7.59</TableCell>
+          <TableCell>9.49</TableCell>
+          <TableCell>11.39</TableCell>
+          <TableCell>15.18</TableCell>
+          <TableCell>18.97</TableCell>
+          <TableCell>22.77</TableCell>
+          <TableCell>30.36</TableCell>
+        </TableRow>
+      </tbody>
+    </StyledTable>
+  </TableContainer>
+  );
+};
+
+
