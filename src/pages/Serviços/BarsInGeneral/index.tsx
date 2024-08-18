@@ -9,6 +9,7 @@ import { useState } from "react"
 export const BarsInGeneral = () => {
 
   const [opctionSelected, setOpctionSelected] = useState<string>()
+  console.log(opctionSelected)
   return (
     <ContainerBarsInGeneral>
       <BannerServices />
