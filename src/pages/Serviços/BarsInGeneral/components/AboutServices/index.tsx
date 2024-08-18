@@ -37,7 +37,7 @@ export const AboutServices = () => {
             quos dolores sed. Illum.
           </TextRegular>
 
-          <Button btnLarge={false}>Saiba Mais!</Button>
+          <Button bgColor="bg" btnLarge={false}>Saiba Mais!</Button>
         </ContentText>
       </ContainerAboutService>
   )
