@@ -28,7 +28,7 @@ export const Faq = () => {
         <ImgFaq src={ImageFaq} alt="" />
 
         <ContentAcordion>
-          <Accordion defaultExpanded>
+          <Accordion>
             <AccordionContent
               expandIcon={<CaretDown size={25} />}
               aria-controls="panel1-content"
@@ -95,44 +95,6 @@ export const Faq = () => {
                 Sim, os medicamentos manipulados são seguros quando preparados
                 por farmácias de manipulação regulamentadas e que seguem as boas
                 práticas de manipulação estabelecidas pela legislação sanitária.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-
-          <Accordion>
-            <AccordionContent
-              expandIcon={<CaretDown size={25} />}
-              aria-controls="panel2-content"
-              id="panel2-header"
-            >
-              <Typography>
-                Quanto tempo leva para preparar um medicamento manipulado?
-              </Typography>
-            </AccordionContent>
-            <AccordionDetails>
-              <Typography>
-                O tempo de preparo pode variar de acordo com a complexidade da
-                fórmula e a demanda da farmácia, geralmente podendo levar de
-                algumas horas a alguns dias.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-
-          <Accordion>
-            <AccordionContent
-              expandIcon={<CaretDown size={25} />}
-              aria-controls="panel2-content"
-              id="panel2-header"
-            >
-              <Typography>
-                Quanto tempo leva para preparar um medicamento manipulado?
-              </Typography>
-            </AccordionContent>
-            <AccordionDetails>
-              <Typography>
-                O tempo de preparo pode variar de acordo com a complexidade da
-                fórmula e a demanda da farmácia, geralmente podendo levar de
-                algumas horas a alguns dias.
               </Typography>
             </AccordionDetails>
           </Accordion>

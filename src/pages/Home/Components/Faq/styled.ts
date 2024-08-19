@@ -33,7 +33,7 @@ export const ContentFaq = styled.div`
 `;
 
 export const ImgFaq = styled.img`
-  width: 50%;
+  width: min(38rem, 50vw);
 `;
 
 export const ContentAcordion = styled.div`

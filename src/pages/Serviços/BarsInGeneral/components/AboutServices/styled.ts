@@ -4,21 +4,32 @@ export const ContainerAboutService = styled.section`
   width: 100%;
   max-width: 110rem;
   height: 35rem;
-  margin: 0 auto;
 
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 2rem;
 
   padding: 3rem;
+
+  @media (max-width: 667px) {
+    height: max-content;
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
 `;
 
 export const StyleImg = styled.div`
-  width: 30rem;
+  width: min(30rem, 37vw);
 
   border: none;
   border-radius: 12px;
   background-color: ${({ theme }) => theme.colors["base-bg"]};
+
+  @media (max-width: 667px) {
+    width: 27rem;
+    order: 2;
+  }
 `;
 
 export const ImageService = styled.img`
@@ -44,5 +55,9 @@ export const ContentText = styled.div`
   h1 {
     top: 0.7rem;
     left: 0.8rem;
+  }
+
+  @media (max-width: 667px) {
+    width: 100%;
   }
 `;
