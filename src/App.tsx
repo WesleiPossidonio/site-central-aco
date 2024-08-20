@@ -1,5 +1,5 @@
 import { ThemeProvider } from "styled-components"
-// import { ToastContainer } from 'react-toastify'
+import { ToastContainer } from 'react-toastify'
 import { BrowserRouter } from "react-router-dom"
 
 import { Router } from "./Routes/routes"
@@ -20,7 +20,7 @@ function App() {
         </Header>
         <Router />
         <Footer />
-{/*         <ToastContainer /> */}
+        <ToastContainer />
         <GlobalStyle />
       </ThemeProvider>
     </BrowserRouter>
