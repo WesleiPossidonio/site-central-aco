@@ -51,4 +51,13 @@ position: absolute;
 top: 40%;
 left: 6%;
 z-index: 1;
+
+@media (max-width: 768px) {
+  width: 100%;
+  left: 0;
+  padding: 2rem;
+    h1 {
+      font-size: min(3.5rem, 6.5vw);
+    }
+  }
 `

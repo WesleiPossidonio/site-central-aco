@@ -20,10 +20,10 @@ export const Footer = () => {
           Mapa do Site
         </TitleText>
         <LinkSite>
-          <TextRegular color="text">Home</TextRegular>
-          <TextRegular color="text">Sobre Nós</TextRegular>
-          <TextRegular color="text">Serviços</TextRegular>
-          <TextRegular color="text">Contatos</TextRegular>
+          <TextRegular color="text" weight={600}>Home</TextRegular>
+          <TextRegular color="text" weight={600}>Sobre Nós</TextRegular>
+          <TextRegular color="text" weight={600}>Serviços</TextRegular>
+          <TextRegular color="text" weight={600}>Contatos</TextRegular>
         </LinkSite>
       </ContentLinkSite>
 

@@ -23,4 +23,19 @@ export const ContainerBanner = styled.div<ContainerBannerProp>`
     margin-top: 10rem;
     z-index: 2;
   }
+
+  @media (max-width: 545px) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+
+    #contentTextBanner {
+      margin-top: 3.6rem;
+    }
+
+    h1 {
+      margin-top: 0;
+      text-align: center;
+    }
+  }
 `;

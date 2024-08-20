@@ -16,6 +16,9 @@ export const ContainerAbout = styled.section`
     height: max-content;
     flex-direction: column;
     gap: 5rem;
+    padding: 1.5rem;
+    margin-top: 3rem;
+
   }
 `;
 
@@ -31,38 +34,74 @@ export const ContainerImage = styled.div`
     position: absolute;
     transform: rotate(-90deg);
     top: 10%;
-    left: min(-2.2rem, 2vw);
+    left: -3rem;
   }
 
   @media (max-width: 767px) {
     width: 100%;
     order: 2;
+    margin-left: 4rem;
+    margin-bottom: 3rem;
 
     span {
-      left: 15%;
+      left: 5rem;
     }
   }
+
+  @keyframes moveY {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-5px);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+  80% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+
+}
 `;
 
 export const ImgAbout = styled.img`
-  width: min(25rem, 26vw);
+  width: min(19.3rem, 55vw);
   height: 26rem;
   object-fit: cover;
 
   margin-bottom: 6rem;
   border: none;
+
+  @media (max-width: 768px) {
+    height: 23rem;
+  }
+
+  animation: moveY 5s ease-in-out infinite;
 `;
 
 export const ImgAboutBotton = styled.img`
-  width: min(18rem, 30vw);
+  width: min(16.5rem, 50vw);
   height: 20rem;
   object-fit: cover;
 
   position: absolute;
   top: 46%;
   right: 49%;
+  animation: moveY 3s ease-in-out infinite;
 
   border: 10px solid #fff;
+
+  @media (max-width: 768px) {
+    height: 18.5rem;
+  }
+
 `;
 
 export const ContainerTextAbout = styled.div`
@@ -93,3 +132,4 @@ export const ContainerTextAbout = styled.div`
     width: 100%;
   }
 `;
+

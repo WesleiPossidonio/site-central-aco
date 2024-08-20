@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContainerMeasurements = styled.div`
+export const ContainerMeasurements = styled.section`
   width: 90%;
   max-width: 110rem;
 
@@ -12,6 +12,10 @@ export const ContainerMeasurements = styled.div`
 
   margin: 0 auto;
   padding: 3rem;
+
+  @media (max-width: 726px) {
+    padding: 1rem;
+  }
 `;
 
 export const HeaderSection = styled.div`
@@ -40,35 +44,6 @@ export const MeasurementContent = styled.div`
   justify-content: center;
   gap: 1rem;
 `;
-
-// export const TableSelected = styled.div`
-// width: 100%;
-// padding: 1.2rem;
-
-// display: flex;
-// justify-content: space-between;
-// align-items: center;
-
-// cursor: pointer;
-// transition: all 0.3s ease;
-// border-radius: 6px;
-
-// box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-// background-color: ${({theme}) => theme.colors["base-gray"]};
-
-// &:hover {
-//   background-color: ${({theme}) => theme.colors["base-bg"]};
-
-//  p, svg {
-//   color: ${({theme}) => theme.colors["base-white"]};
-//  }
-// }
-
-
-// @media (max-width: 768px) {
-//     display: none;
-//   }
-// `
 
 export const Selected = styled.select`
 width: 18rem;

@@ -41,4 +41,10 @@ export const ContentText = styled.div`
   button {
     margin-top: 1rem;
   }
+
+  @media (max-width: 500px) {
+    h1 {
+      font-size: min(1.8rem, 5.8vw);
+    }
+  }
 `;

@@ -74,7 +74,30 @@ export const AdvantageBox = styled.div`
     align-items: flex-start;
     justify-content: center;
     gap: 0.3rem;
+  
   }
+
+  @keyframes moveY {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-5px);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+  80% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+
+}
 `;
 
 export const ContentImg = styled.div`
@@ -107,13 +130,6 @@ export const BoxImage = styled.div<BoxImageProps>`
     height: ${({ widthImage }) =>
       widthImage === "imgOne" ? "11rem" : "20rem"};
   }
-
-  /* @media (max-width: 405px) {
-    width: ${({ widthImage }) =>
-    widthImage === "imgOne" ? "min(11rem" : "10.5rem"};
-    height: ${({ widthImage }) =>
-    widthImage === "imgOne" ? "11rem" : "10rem"};
-  } */
 `;
 
 export const ImgOne = styled.img`
@@ -167,6 +183,8 @@ export const BoxNumber = styled.div`
   position: absolute;
   top: 14.5rem;
   right: 10.1rem;
+
+  animation: moveY 4s ease-in-out infinite;
 
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   background-color: ${({ theme }) => theme.colors["base-white"]};

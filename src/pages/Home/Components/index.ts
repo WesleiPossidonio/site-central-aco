@@ -1,5 +1,5 @@
 export * from './Hero'
-export * from './Header'
+export * from '../../../components/Header'
 export * from './HeaderLinks'
 export * from './About'
 export * from './SectionServices'

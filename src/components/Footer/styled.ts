@@ -13,20 +13,10 @@ export const ContainerFooter = styled.footer`
 
   @media (max-width: 696px) {
     height: max-content;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-  }
-`;
-
-export const ContainerContact = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.8rem;
-
-  @media (max-width: 696px) {
-    order: 2;
+    align-items: flex-start;
+    gap: 2rem;
   }
 `;
 
@@ -43,14 +33,15 @@ export const ContentLogo = styled.div`
 
   @media (max-width: 696px) {
     order: 3;
-    margin-bottom: 2rem;
+    margin-top: 1.5rem;
   }
 `;
 
 export const ContentContact = styled(ContentLogo)`
   @media (max-width: 696px) {
-    order: 1;
-    div{
+    order: 2;
+    margin-top: 0;
+    div {
       width: 100%;
     }
   }
@@ -58,6 +49,14 @@ export const ContentContact = styled(ContentLogo)`
 
 export const ContentLinkSite = styled(ContentLogo)`
   order: 2;
+
+  @media (max-width: 696px) {
+    margin: 0;
+
+    div {
+      margin: 0;
+    }
+  }
 `;
 
 export const LinkSite = styled(ContentLogo)`
@@ -75,6 +74,14 @@ export const TitleLinks = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+  }
+
+  p {
+    cursor: pointer;
+
+    &:hover {
+      color: ${({theme}) => theme.colors["base-bg"]};
+    }
   }
 `;
 

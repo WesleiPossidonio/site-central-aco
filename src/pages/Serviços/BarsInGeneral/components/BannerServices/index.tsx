@@ -6,7 +6,7 @@ import ImageBanner from '../../../../../assets/ImgBannerTwo.jpg'
 export const BannerServices = () => {
   return (
     <ContainerBanner ImageBg={ImageBanner}>
-    <div>
+    <div id='contentTextBanner'>
       <TitleText color="white" size='xl'>Barras em Geral</TitleText>
       <TextRegular color="white">
         Lorem ipsum dolor sit amet consectetur adipisicing elit

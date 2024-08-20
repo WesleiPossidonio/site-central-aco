@@ -15,7 +15,9 @@ export const ContainerAboutService = styled.section`
   @media (max-width: 667px) {
     height: max-content;
     flex-wrap: wrap;
-    padding: 2rem;
+    gap: 3.5rem;
+    padding: 2.5rem;
+    margin-top: 3rem;
   }
 `;
 
@@ -27,7 +29,7 @@ export const StyleImg = styled.div`
   background-color: ${({ theme }) => theme.colors["base-bg"]};
 
   @media (max-width: 667px) {
-    width: 27rem;
+    width: 22rem;
     order: 2;
   }
 `;
