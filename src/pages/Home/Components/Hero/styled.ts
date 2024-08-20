@@ -7,6 +7,7 @@ height: 100vh;
 
 .mySwiper {
   width: 100%;
+  height: 100vh;
 }
 `
 
@@ -30,6 +31,7 @@ export const ContentSwiper = styled(SwiperSlide)`
 
 export const ImgBanner = styled.img`
 width: 100%;
+height: 100vh;
 
 object-fit: cover;
 z-index: 1;

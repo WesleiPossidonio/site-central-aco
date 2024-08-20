@@ -27,6 +27,10 @@ position: relative;
 
 display: flex;
 flex-direction: column;
+
+@media (max-width: 726px) {
+   width: 100%;
+  }
 `
 
 export const CardSwiper = styled(SwiperSlide)`

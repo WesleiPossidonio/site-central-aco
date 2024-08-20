@@ -15,6 +15,12 @@ export const ContainerFaq = styled.section`
 
   margin: 0 auto;
   padding: 3rem 4rem;
+
+  @media (max-width: 726px) {
+    height: max-content;
+    padding: 4rem 1.5rem;
+    gap: 3rem;
+  }
 `;
 
 export const ContainerTitle = styled.div`
@@ -30,10 +36,20 @@ export const ContentFaq = styled.div`
   align-items: center;
   justify-content: center;
   gap: 2rem;
+
+  @media (max-width: 726px) {
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
 `;
 
 export const ImgFaq = styled.img`
-  width: min(38rem, 50vw);
+  width: min(35rem, 45vw);
+
+  @media (max-width: 726px) {
+    width: min(45rem, 95vw);
+    order: 2;
+  }
 `;
 
 export const ContentAcordion = styled.div`

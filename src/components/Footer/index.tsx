@@ -1,6 +1,6 @@
 import { Envelope, MapPin, WhatsappLogo } from "@phosphor-icons/react"
 
-import { ContainerFooter, ContentLinks, ImgLogo, LinkSite, TitleLinks } from "./styled"
+import { ContainerFooter, ContentContact, ContentLinkSite, ContentLogo, ImgLogo, LinkSite, TitleLinks } from "./styled"
 
 import Logo from '../../assets/logo.png'
 import { TextRegular, TitleText } from "../typografy"
@@ -8,14 +8,14 @@ import { TextRegular, TitleText } from "../typografy"
 export const Footer = () => {
   return (
     <ContainerFooter>
-      <ContentLinks>
+      <ContentLogo>
         <ImgLogo src={Logo} />
         <TextRegular color="text">
           Central de Aços © 2024 - Todos os direitos reservados. 
         </TextRegular>
-      </ContentLinks>
+      </ContentLogo>
 
-      <ContentLinks>
+      <ContentLinkSite>
         <TitleText color="text">
           Mapa do Site
         </TitleText>
@@ -25,15 +25,15 @@ export const Footer = () => {
           <TextRegular color="text">Serviços</TextRegular>
           <TextRegular color="text">Contatos</TextRegular>
         </LinkSite>
-      </ContentLinks>
+      </ContentLinkSite>
 
-      <ContentLinks>
+      <ContentContact>
         <TitleText color="text">
           Contatos
         </TitleText>
 
         <TitleLinks>
-           <WhatsappLogo size={31} color="#fff" />
+           <WhatsappLogo size={31} color="#000" />
            <div>
               <TextRegular weight={600}>Whatsapp</TextRegular>
               <TextRegular size="sm" color="text">
@@ -43,7 +43,7 @@ export const Footer = () => {
         </TitleLinks>
 
         <TitleLinks>
-           <Envelope size={31} color="#fff" />
+           <Envelope size={31} color="#000" />
            <div>
               <TextRegular weight={600}>Email</TextRegular>
               <TextRegular size="sm" color="text">
@@ -53,14 +53,14 @@ export const Footer = () => {
         </TitleLinks>
         
         <TitleLinks>
-           <MapPin size={31} color="#fff" />
+           <MapPin size={31} color="#000" />
            <div>
               <TextRegular weight={600}>Matrix Macaé</TextRegular>
               <TextRegular size="sm" color="text">Rua Dr Julio Olivier, 320</TextRegular>
            </div>
         </TitleLinks>
 
-      </ContentLinks>
+      </ContentContact>
     </ContainerFooter>
   )
 }

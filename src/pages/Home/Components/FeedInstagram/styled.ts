@@ -32,14 +32,23 @@ export const ContainerTitle = styled.div`
 `;
 
 export const ContentFeedInstagram = styled.div`
-  max-width: 75%;
-
+max-width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(14.625rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(14.625rem, 7vw));
   gap: 1.5rem;
 
   margin: 0 auto;
   padding: 3rem;
+
+  @media (min-width: 1024px) {
+    max-width: 70rem;
+ }
+
+  @media (max-width: 433px) {
+    max-width: 100%;
+    grid-template-columns: repeat(2, minmax(11.625rem, 3vw));
+    padding: 0;
+}
 `;
 
 export const LinkPost = styled.a`
