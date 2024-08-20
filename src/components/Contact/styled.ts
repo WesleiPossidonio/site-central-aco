@@ -3,9 +3,10 @@ import styled from "styled-components";
 export const ContainerContact = styled.section`
   width: 100%;
   max-width: 112.5rem;
-  height: 50rem;
+  height: 100vh;
 
   margin: 0 auto;
+  margin-bottom: 7rem;
   padding: 6rem 4rem;
 
   display: flex;
@@ -15,14 +16,14 @@ export const ContainerContact = styled.section`
 
   @media (max-width: 667px) {
     height: max-content;
-    padding: 2rem;
+    padding: 1.5rem;
     text-align: center;
   }
 `;
 
 export const ContentContact = styled.div`
   width: 100%;
-  height: 42rem;
+  height: 50rem;
 
   display: flex;
   flex-direction: column;
@@ -70,6 +71,7 @@ export const ContainerEmailAndWhatsapp = styled.div`
     align-items: center;
   }
 `;
+
 export const ContentEmailAndWhatsapp = styled.div`
   display: flex;
   flex-direction: column;
@@ -121,11 +123,26 @@ export const ContentForm = styled.form`
     margin-top: 1rem;
   }
 
-  @media (max-width: 680px) {
+  #reCaptcha {
+    align-self: flex-start;
+  }
+
+  .rc-anchor-normal {
     width: 100%;
   }
-`;
 
+  @media (max-width: 680px) {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  @media (max-width: 320px) {
+
+    #reCaptcha {
+      margin-left: -2.5rem;
+    }
+  }
+`;
 
 export const ContentTitle = styled.div`
   display: flex;
