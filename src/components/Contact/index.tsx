@@ -23,7 +23,7 @@ import {
 import { Button, TextRegular, TitleText, Input } from ".."
 import 'aos/dist/aos.css';
 
-import api from "../../Services/api"
+// import api from "../../Services/api"
 
 const sendEmailFormSchema = zod.object({
   name: zod.string().min(3, 'Por gentileza, digite o seu nome'),
