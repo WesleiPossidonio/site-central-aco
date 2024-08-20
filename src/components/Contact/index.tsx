@@ -1,10 +1,11 @@
 
 import { MapPinArea, Phone, Envelope } from "@phosphor-icons/react"
-import ReCAPTCHA from 'react-google-recaptcha'
+import api from "../../Services/api"
+
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { toast } from "react-toastify"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import * as zod from 'zod'
 import AOS from 'aos'
 
@@ -22,8 +23,8 @@ import {
 
 import { Button, TextRegular, TitleText, Input } from ".."
 import 'aos/dist/aos.css';
+import ReCAPTCHA from "react-google-recaptcha"
 
-// import api from "../../Services/api"
 
 const sendEmailFormSchema = zod.object({
   name: zod.string().min(3, 'Por gentileza, digite o seu nome'),
@@ -73,8 +74,6 @@ export const Contact = () => {
       return;
     }
 
-    console.log("Captcha:", captcha)
-
     try {
       await toast.promise(api.post('sendMail', dataSendEmail), {
         pending: 'Verificando seus dados',
@@ -92,8 +91,6 @@ export const Contact = () => {
       setCaptcha(token)
     }
   }
-
-
 
   return (
     <ContainerContact id="contato">
