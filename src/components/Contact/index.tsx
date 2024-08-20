@@ -3,7 +3,7 @@ import { MapPinArea, Phone, Envelope } from "@phosphor-icons/react"
 // import ReCAPTCHA from 'react-google-recaptcha'
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
-import { toast } from "react-toastify"
+// import { toast } from "react-toastify"
 import { useEffect } from "react"
 import * as zod from 'zod'
 import AOS from 'aos'
@@ -63,7 +63,7 @@ export const Contact = () => {
       subject_text,
       subject_title
     }
-
+    console.log(dataSendEmail)
     reset()
 
     // if (!captcha) {
@@ -77,15 +77,15 @@ export const Contact = () => {
 
     // console.log("Captcha:", captcha)
 
-    try {
-      await toast.promise(api.post('sendMail', dataSendEmail), {
-        pending: 'Verificando seus dados',
-        success: 'Dúvida enviada com sucesso!',
-        error: 'Verifique seus dado e faça novamente! 🤯',
-      })
-    } catch (error) {
-      console.log(error)
-    }
+    // try {
+    //   await toast.promise(api.post('sendMail', dataSendEmail), {
+    //     pending: 'Verificando seus dados',
+    //     success: 'Dúvida enviada com sucesso!',
+    //     error: 'Verifique seus dado e faça novamente! 🤯',
+    //   })
+    // } catch (error) {
+    //   console.log(error)
+    // }
 
   }
 
