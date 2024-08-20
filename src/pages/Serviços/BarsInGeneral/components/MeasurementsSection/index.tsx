@@ -1,7 +1,7 @@
 
 import { TextRegular, TitleSection } from "../../../../../components"
 import { ContainerMeasurements, HeaderSection, MeasurementContent, Selected } from "./styled"
-import { TableBarsInGeneral } from "../../../../../components/Tables"
+import { TableBarrasQuadradas, TableBarrasRedondas, TableBarrasT, TableBarsInGeneral } from "../../../../../components/Tables"
 import { useState } from "react"
 
 
@@ -12,7 +12,21 @@ export const MeasurementsSection = () => {
     setOptionSelected(data)
   }
 
-  console.log(optionSelected)
+  const tableSelected = () => {
+    switch (optionSelected) {
+      case 'BARRA CHATADA':
+        return <TableBarsInGeneral />
+      case 'BARRA T':
+        return <TableBarrasT />
+      case 'BARRAS QUADRADAS':
+        return <TableBarrasQuadradas />
+      case 'BARRAS REDONDAS':
+        return <TableBarrasRedondas />
+      default:
+        return <TableBarsInGeneral />
+    }
+  }
+
   return (
     <ContainerMeasurements>
 
@@ -34,14 +48,16 @@ export const MeasurementsSection = () => {
           onChange={(e) => handleSelectedTable(e.target.value)}
           >
             <option value="BARRA CHATADA">BARRA CHATADA</option>
-            <option value="BARRA CHATADA">BARRA CHATADA</option>
-            <option value="BARRA CHATADA">BARRA CHATADA</option>
-            <option value="BARRA CHATADA">BARRA CHATADA</option>
+            <option value="BARRA T">BARRA T</option>
+            <option value="BARRAS QUADRADAS">BARRAS QUADRADAS</option>
+            <option value="BARRAS REDONDAS">BARRAS REDONDAS</option>
           </Selected>
       </HeaderSection>
 
       <MeasurementContent>
-        <TableBarsInGeneral />
+        {
+          tableSelected()
+        }
       </MeasurementContent>
         
     </ContainerMeasurements>

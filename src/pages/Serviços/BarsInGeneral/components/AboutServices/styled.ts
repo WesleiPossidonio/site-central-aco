@@ -12,13 +12,13 @@ export const ContainerAboutService = styled.section`
 
   padding: 3rem;
 
-  @media (max-width: 667px) {
+  /* @media (max-width: 667px) {
     height: max-content;
     flex-wrap: wrap;
     gap: 3.5rem;
     padding: 2.5rem;
     margin-top: 3rem;
-  }
+  } */
 `;
 
 export const StyleImg = styled.div`
@@ -28,10 +28,10 @@ export const StyleImg = styled.div`
   border-radius: 12px;
   background-color: ${({ theme }) => theme.colors["base-bg"]};
 
-  @media (max-width: 667px) {
+  /* @media (max-width: 667px) {
     width: 22rem;
     order: 2;
-  }
+  } */
 `;
 
 export const ImageService = styled.img`
@@ -60,6 +60,7 @@ export const ContentText = styled.div`
   }
 
   @media (max-width: 667px) {
-    width: 100%;
+    /* width: 100%; */
+    display: none;
   }
 `;

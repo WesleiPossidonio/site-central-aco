@@ -1,1 +1,6 @@
 export * from './TableBarsInGeneral'
+export * from './BarrasRedondas'
+export * from './ChapasChadrex'
+export * from './ChapasEmGeral'
+export * from './TableBarrasQuadradas'
+export * from './TableBarrasT'
