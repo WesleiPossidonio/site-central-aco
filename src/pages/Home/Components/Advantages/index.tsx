@@ -16,7 +16,7 @@ import {
   ListAdvantages
 } from "./styled"
 import { Checks, HandCoins, Nut, Users } from '@phosphor-icons/react'
-// import CountUp from 'react-countup'
+import CountUp from 'react-countup'
 
 export const Advantages = () => {
   return (
@@ -89,7 +89,7 @@ export const Advantages = () => {
         </BoxImage>
 
         <BoxNumber>
-{/*           <TitleText size="xl" color="bg">+<CountUp end={1000} duration={5} /></TitleText> */}
+          <TitleText size="xl" color="bg">+<CountUp end={1000} duration={5} /></TitleText>
           <TitleText>Clientes <br /> Satisfeitos</TitleText>
         </BoxNumber>
       </ContentImg>
