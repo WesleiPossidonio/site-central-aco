@@ -1,9 +1,9 @@
 
 import { MapPinArea, Phone, Envelope } from "@phosphor-icons/react"
-// import ReCAPTCHA from 'react-google-recaptcha'
+import ReCAPTCHA from 'react-google-recaptcha'
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
-// import { toast } from "react-toastify"
+import { toast } from "react-toastify"
 import { useEffect } from "react"
 import * as zod from 'zod'
 import AOS from 'aos'
@@ -38,7 +38,7 @@ const sendEmailFormSchema = zod.object({
 
 type createSendEmailFormInputs = zod.infer<typeof sendEmailFormSchema>
 export const Contact = () => {
-  // const [captcha, setCaptcha] = useState('')
+  const [captcha, setCaptcha] = useState('')
 
   const {
     register,
@@ -66,34 +66,32 @@ export const Contact = () => {
     console.log(dataSendEmail)
     reset()
 
-    // if (!captcha) {
-    //   // toast.error("Captcha pendente!", {
-    //   //   position: "top-left"
-    //   // })
-    //   // return;
+    if (!captcha) {
+      toast.error("Captcha pendente!", {
+        position: "top-left"
+      })
+      return;
+    }
 
-    //    alert('captcha pendente');
-    // }
+    console.log("Captcha:", captcha)
 
-    // console.log("Captcha:", captcha)
-
-    // try {
-    //   await toast.promise(api.post('sendMail', dataSendEmail), {
-    //     pending: 'Verificando seus dados',
-    //     success: 'Dúvida enviada com sucesso!',
-    //     error: 'Verifique seus dado e faça novamente! 🤯',
-    //   })
-    // } catch (error) {
-    //   console.log(error)
-    // }
+    try {
+      await toast.promise(api.post('sendMail', dataSendEmail), {
+        pending: 'Verificando seus dados',
+        success: 'Dúvida enviada com sucesso!',
+        error: 'Verifique seus dado e faça novamente! 🤯',
+      })
+    } catch (error) {
+      console.log(error)
+    }
 
   }
 
-  // const handleCapcha = (token: string | null) => {
-  //   if (token !== null) {
-  //     setCaptcha(token)
-  //   }
-  // }
+  const handleCapcha = (token: string | null) => {
+    if (token !== null) {
+      setCaptcha(token)
+    }
+  }
 
 
 
@@ -192,11 +190,11 @@ export const Contact = () => {
               error={errors.subject_text?.message}
             />
 
-{/*             <ReCAPTCHA
+            <ReCAPTCHA
               sitekey={import.meta.env.VITE_RECAPTCHA_KEY}
               onChange={handleCapcha}
               id="reCaptcha"
-            /> */}
+            />
             <Button bgColor="white" btnLarge={false}>Enviar</Button>
           
           </ContentForm>
