@@ -8,7 +8,7 @@ import { DefaultThemes } from "./styles/theme/default"
 import { HeaderLinks } from "./pages/Home/Components"
 import { Footer, HeaderMenu } from "./components"
 import { Header } from "./pages/Home/styled"
-// import 'react-toastify/dist/ReactToastify.css'
+import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
   return (
