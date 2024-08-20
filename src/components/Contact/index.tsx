@@ -4,7 +4,7 @@ import { MapPinArea, Phone, Envelope } from "@phosphor-icons/react"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { toast } from "react-toastify"
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import * as zod from 'zod'
 import AOS from 'aos'
 
@@ -89,11 +89,11 @@ export const Contact = () => {
 
   }
 
-  const handleCapcha = (token: string | null) => {
-    if (token !== null) {
-      setCaptcha(token)
-    }
-  }
+  // const handleCapcha = (token: string | null) => {
+  //   if (token !== null) {
+  //     setCaptcha(token)
+  //   }
+  // }
 
 
 
