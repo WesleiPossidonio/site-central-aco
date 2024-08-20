@@ -193,7 +193,7 @@ export const Contact = () => {
             />
 
             <ReCAPTCHA
-              sitekey={import.meta.env.RECAPTCHA_KEY}
+              sitekey={import.meta.env.VITE_RECAPTCHA_KEY}
               onChange={handleCapcha}
               id="reCaptcha"
             />
