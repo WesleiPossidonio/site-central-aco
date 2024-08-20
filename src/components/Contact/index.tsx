@@ -66,14 +66,14 @@ export const Contact = () => {
 
     reset()
 
-    if (!captcha) {
-      toast.error("Captcha pendente!", {
-        position: "top-left"
-      })
-      return;
-    }
+    // if (!captcha) {
+    //   toast.error("Captcha pendente!", {
+    //     position: "top-left"
+    //   })
+    //   return;
+    // }
 
-    console.log("Captcha:", captcha)
+    // console.log("Captcha:", captcha)
 
     try {
       await toast.promise(api.post('sendMail', dataSendEmail), {
