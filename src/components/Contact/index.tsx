@@ -70,7 +70,10 @@ export const Contact = () => {
       toast.error("Captcha pendente!", {
         position: "top-left"
       })
+      return;
     }
+
+    console.log("Captcha:", captcha)
 
     try {
       await toast.promise(api.post('sendMail', dataSendEmail), {
