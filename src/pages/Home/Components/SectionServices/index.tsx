@@ -17,11 +17,14 @@ import CantoneiraIcon from '../../../../assets/CantoneiraIcon.svg'
 // Components
 import { TextRegular, TitleSection, TitleText } from '../../../../components'
 import { CardSwiper, ContainerSectionServices, ContentTextCard, Header, Icon } from './styled'
+import { useNavigate } from 'react-router-dom'
 
 
 export const SectionServices = () => {
+
+  const navigate = useNavigate()
   return (
-    <ContainerSectionServices>
+    <ContainerSectionServices id='services'>
       <Header>
         <TitleSection
           line={true}
@@ -72,7 +75,7 @@ export const SectionServices = () => {
           <ContentTextCard>
             <TitleText>Barras em Geral</TitleText>
             <TextRegular size='s'>Estrutura sólida começa com as nossas barras de alta qualidade.</TextRegular>
-            <a href="#" target='_blank'>Saiba Mais!</a>
+            <TextRegular size='m' color='bg' weight={500} onClick={() => navigate('/barras-em-geral')}>Saiba Mais!</TextRegular>
           </ContentTextCard>
         </CardSwiper>
 
@@ -82,7 +85,7 @@ export const SectionServices = () => {
           <ContentTextCard>
             <TitleText>Cantoneira</TitleText>
             <TextRegular>Cantoneiras que garantem o ângulo perfeito e a resistência que sua obra precisa.</TextRegular>
-            <a href="#" target='_blank'>Saiba Mais!</a>
+            <TextRegular size='m' color='bg' weight={500} onClick={() => navigate('/cantoneira')}>Saiba Mais!</TextRegular>
           </ContentTextCard>
         </CardSwiper>
 
@@ -92,7 +95,7 @@ export const SectionServices = () => {
           <ContentTextCard>
             <TitleText>Chapas em Geral</TitleText>
             <TextRegular>Versatilidade e força em cada chapa para suas soluções estruturais.</TextRegular>
-            <a href="#" target='_blank'>Saiba Mais!</a>
+            <TextRegular size='m' color='bg' weight={500} onClick={() => navigate('/chapas-em-geral')}>Saiba Mais!</TextRegular>
           </ContentTextCard>
         </CardSwiper>
 
@@ -102,7 +105,7 @@ export const SectionServices = () => {
           <ContentTextCard>
             <TitleText>Vigas em Geral</TitleText>
             <TextRegular>Vigas robustas que sustentam grandes ideias e projetos grandiosos.</TextRegular>
-            <a href="#" target='_blank'>Saiba Mais!</a>
+            <TextRegular size='m' color='bg' weight={500}>Saiba Mais!</TextRegular>
           </ContentTextCard>
 
         </CardSwiper>
@@ -113,7 +116,7 @@ export const SectionServices = () => {
           <ContentTextCard>
             <TitleText>Tarugos</TitleText>
             <TextRegular>Tarugos de precisão para resultados impecáveis e duradouros.</TextRegular>
-            <a href="#" target='_blank'>Saiba Mais!</a>
+            <TextRegular size='m' color='bg' weight={500}>Saiba Mais!</TextRegular>
           </ContentTextCard>
 
         </CardSwiper>
@@ -124,7 +127,7 @@ export const SectionServices = () => {
           <ContentTextCard>
             <TitleText>Telas Telcon</TitleText>
             <TextRegular>Proteção e segurança com as telas Telcon que você pode confiar.</TextRegular>
-            <a href="#" target='_blank'>Saiba Mais!</a>
+            <TextRegular size='m' color='bg' weight={500}>Saiba Mais!</TextRegular>
           </ContentTextCard>
         </CardSwiper>
 
@@ -134,7 +137,7 @@ export const SectionServices = () => {
           <ContentTextCard>
             <TitleText>Tubos em Geral</TitleText>
             <TextRegular>Tubos versáteis e resistentes para conduzir seus projetos ao sucesso</TextRegular>
-            <a href="#" target='_blank'>Saiba Mais!</a>
+            <TextRegular size='m' color='bg' weight={500}>Saiba Mais!</TextRegular>
           </ContentTextCard>
         </CardSwiper>
 

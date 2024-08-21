@@ -1,4 +1,4 @@
-import { Button, TextRegular, TitleText } from "../../../../../components"
+import { Button, TextRegular, TitleText } from "..//../../../../components"
 import { ContainerCallAction, ContentCallAction, ContentText } from "./styled"
 
 export const CallAction = () => {

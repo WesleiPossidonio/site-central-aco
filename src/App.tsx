@@ -6,7 +6,7 @@ import { Router } from "./Routes/routes"
 import { GlobalStyle } from "./styles/globalstyles"
 import { DefaultThemes } from "./styles/theme/default"
 import { HeaderLinks } from "./pages/Home/Components"
-import { Footer, HeaderMenu } from "./components"
+import { Footer, HeaderMenu, WhatsappButton } from "./components"
 import { Header } from "./pages/Home/styled"
 import 'react-toastify/dist/ReactToastify.css'
 
@@ -18,6 +18,7 @@ function App() {
           <HeaderLinks />
           <HeaderMenu />
         </Header>
+        <WhatsappButton />
         <Router />
         <Footer />
         <ToastContainer />

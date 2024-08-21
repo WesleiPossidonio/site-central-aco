@@ -1,6 +1,6 @@
 //images
-import ImageBoxTwo from '../../../../assets/ImgAdvantagesTwo.jpg'
-import ImageBoxThree from '../../../../assets/ImgAdvantagesThree.jpg'
+import ImageBoxTwo from '../../../../assets/ImgAdvantagesTwo.webp'
+import ImageBoxThree from '../../../../assets/ImgAdvantagesThree.webp'
 
 //Components and Styles
 import { Button, TextRegular, TitleSection, TitleText } from "../../../../components"
@@ -17,11 +17,18 @@ import {
 } from "./styled"
 import { Checks, HandCoins, Nut, Users } from '@phosphor-icons/react'
 import CountUp from 'react-countup'
+import AOS from 'aos'
+import { useEffect } from 'react'
 
 export const Advantages = () => {
+
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   return (
     <ContainerAdvantages>
-      <ContentText>
+      <ContentText data-aos="fade-right" data-aos-duration="1000">
         <TitleSection
           PositionTitle='flex-start'
           TextSubTitle='VANTAGENS'
@@ -76,10 +83,12 @@ export const Advantages = () => {
           </AdvantageBox>
         </ListAdvantages>
 
-        <Button bgColor='bg' btnLarge={false}>Saíba Mais!</Button>
+        <Button bgColor='bg' btnLarge={false}>
+          <a href="https://api.whatsapp.com/send?phone=552227622717&text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento" target='_blank'>Saiba Mais!</a>
+        </Button>
       </ContentText>
 
-      <ContentImg>
+      <ContentImg data-aos="zoom-in" data-aos-duration="1000">
         <BoxImage widthImage='imgOne'>
           <ImgOne src={ImageBoxTwo} className="imgTwo" />
         </BoxImage>

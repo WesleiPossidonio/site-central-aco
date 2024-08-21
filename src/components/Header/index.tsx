@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import Logo from '../../assets/logo.png'
 import { ContainerHeaderMenu, ImgLogo, NavDesktop, NavLink, NavLinkMobile, NavMobile } from "./styled"
 import { List, X } from "@phosphor-icons/react"
+import { useNavigate } from "react-router-dom"
 
 export const HeaderMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -31,9 +32,11 @@ export const HeaderMenu = () => {
     setIsOpen((open: boolean) => !open)
   }
 
+  const navigate = useNavigate()
+
   return (
     <ContainerHeaderMenu stateHeader={stateBackgroundHeader}>
-      <ImgLogo src={Logo} />
+      <ImgLogo src={Logo} onClick={() => navigate('/')} />
 
       <NavDesktop>
         <NavLink
@@ -54,14 +57,14 @@ export const HeaderMenu = () => {
 
         <NavLink
           stateHeader={stateBackgroundHeader}
-          href="#companies"
+          href="#services"
 
         >
           Serviços
         </NavLink>
         <NavLink
           stateHeader={stateBackgroundHeader}
-          href="#contato"
+          href="#contact"
 
         >
           Contatos

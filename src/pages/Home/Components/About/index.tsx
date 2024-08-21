@@ -1,6 +1,7 @@
 // Images
-import ImgABoutOne from '../../../../assets/AboutOne.jpg'
-import ImgABoutTwo from '../../../../assets/AboutTwo.jpg'
+import { useEffect } from 'react'
+import ImgABoutOne from '../../../../assets/AboutOne.webp'
+import ImgABoutTwo from '../../../../assets/AboutTwo.webp'
 
 // Components
 import { Button, TextRegular, TitleSection, TitleText } from "../../../../components"
@@ -12,10 +13,17 @@ import {
   ImgAboutBotton
 } from "./styled"
 
+import AOS from 'aos'
+
 export const About = () => {
+
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   return (
-    <ContainerAbout>
-      <ContainerImage>
+    <ContainerAbout id='about'>
+      <ContainerImage data-aos="zoom-in" data-aos-duration="1000">
         <span>
           <TitleText size="xll" weight={700} color="bg">+20</TitleText>
           <TitleText size="m" color="text">Anos no Mercado</TitleText>
@@ -24,7 +32,7 @@ export const About = () => {
         <ImgAboutBotton src={ImgABoutTwo} />
       </ContainerImage>
 
-      <ContainerTextAbout>
+      <ContainerTextAbout data-aos="fade-left" data-aos-duration="1000">
         <TitleSection
           PositionTitle='flex-start'
           SubTitleColor='text'

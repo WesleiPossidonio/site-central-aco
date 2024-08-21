@@ -5,7 +5,7 @@ import {
   BannerMain, 
   CallAction,
   Faq, 
-  FeedInstagram,
+  FeedInstagram, 
   SectionServices 
 } from "./Components"
 import { ContainerPage} from "./styled"
@@ -13,14 +13,14 @@ import { ContainerPage} from "./styled"
 export const Home = () => {
   return (
     <ContainerPage>
-        <BannerMain />
-        <About />
-        <SectionServices />
-        <Advantages />
-        <CallAction />
-        <FeedInstagram />
-        <Faq />
-        <Contact />
+      <BannerMain />
+      <About />
+      <SectionServices />
+      <Advantages />
+      <CallAction />
+      <FeedInstagram />
+      <Faq />
+      <Contact />
     </ContainerPage>
   )
 }

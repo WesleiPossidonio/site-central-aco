@@ -1,7 +1,7 @@
 import {StyledTable, TableCell, TableContainer, TableHeader, TableRow} from './styled'
 
 
-export const ChapasEmGeral = () => {
+export const TableChapasEmGeral = () => {
   return (
     <TableContainer>
       <StyledTable>

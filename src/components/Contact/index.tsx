@@ -69,7 +69,7 @@ export const Contact = () => {
 
     if (!captcha) {
       toast.error("Captcha pendente!", {
-        position: "top-left"
+        position: "top-right"
       })
       return;
     }
@@ -83,7 +83,6 @@ export const Contact = () => {
     } catch (error) {
       console.log(error)
     }
-
   }
 
   const handleCapcha = (token: string | null) => {
@@ -93,7 +92,7 @@ export const Contact = () => {
   }
 
   return (
-    <ContainerContact id="contato">
+    <ContainerContact id="contact">
       <ContentContact data-aos="zoom-in" data-aos-duration="1000">
         <ContentTitle>
           <TitleText size="s" color="white">
@@ -109,28 +108,10 @@ export const Contact = () => {
 
           <ContainerEmailAndWhatsapp>
             <ContentEmailAndWhatsapp>
-              <TitleText size="s" color="white"> <MapPinArea size={35} color="#fff" /> Endereços</TitleText>
+              <Phone size={45} color="#fff" />
               <div>
-                <TextRegular color="white"> <strong>Macaé:</strong>{' '}
-                  <a href=""> Rua Dr Julio Olivier, 320, Centro, Macaé/RJ </a>
-                </TextRegular>
-
-                <TextRegular color="white"><strong>Cabo Frio:</strong>{' '}
-                  <a href=""> Rua Raul Veiga, 60, Centro, Cabo Frio/RJ </a>
-                </TextRegular>
-              </div>
-            </ContentEmailAndWhatsapp>
-
-            <ContentEmailAndWhatsapp>
-              <TitleText size="s" color="white"><Phone size={35} color="#fff" />Telefones</TitleText>
-
-              <div>
-                <TextRegular color="white"><strong>Macaé:</strong>{' '}
-                  <a href="tel:+552227626481">(22) 2762-6481</a> / {' '}
-                  <a href="tel:+55222762-925">(22) 2762-2925</a>
-                </TextRegular>
-
-                <TextRegular color="white"><strong>Cabo Frio:</strong>{' '}
+                <TitleText size="s" color="white">Telefones:</TitleText>
+                <TextRegular color="white">
                   <a href="tel:+552227626481">(22) 2762-6481</a> / {' '}
                   <a href="tel:+55222762-925">(22) 2762-2925</a>
                 </TextRegular>
@@ -138,22 +119,30 @@ export const Contact = () => {
             </ContentEmailAndWhatsapp>
 
             <ContentEmailAndWhatsapp>
-              <TitleText size="s" color="white"><Envelope size={35} color="#fff" />E-mail</TitleText>
-
+              <Envelope size={45} color="#fff" />
               <div>
+                <TitleText size="s" color="white">E-mail</TitleText>
                 <TextRegular color="white"><strong>Macaé:</strong>{' '}
                   <a href="mailto:orcamento@farmaciaaguaviva.com">
                     orcamento@farmaciaaguaviva.com
                   </a>
                 </TextRegular>
+              </div>
+            </ContentEmailAndWhatsapp>
 
-                <TextRegular color="white"><strong>Cabo Frio:</strong>{' '}
-                  <a href="mailto:aguavivacf@farmaciaaguaviva.com">
-                    aguavivacf@farmaciaaguaviva.com
-                  </a>
+            <ContentEmailAndWhatsapp>
+              <MapPinArea size={45} color="#fff" />
+              <div>
+                <TitleText size="s" color="white">Endereços</TitleText>
+                <TextRegular color="white" weight={500}>
+                  <a href=""> Rua Dr Julio Olivier, 320, Centro, Macaé/RJ </a>
                 </TextRegular>
               </div>
             </ContentEmailAndWhatsapp>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.9280305733837!2d-41.791317825420236!3d-22.394070419747123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96305e7fb8f765%3A0xfaba4f7ab425e1bb!2sCentral%20de%20A%C3%A7os!5e0!3m2!1spt-BR!2sbr!4v1724204897163!5m2!1spt-BR!2sbr" id="Maps" loading="lazy"></iframe>
+
           </ContainerEmailAndWhatsapp>
 
           <ContentForm onSubmit={handleSubmit(handleSendEmail)}>
@@ -193,7 +182,7 @@ export const Contact = () => {
               id="reCaptcha"
             />
             <Button bgColor="white" btnLarge={false}>Enviar</Button>
-          
+
           </ContentForm>
 
         </ContentInfo>

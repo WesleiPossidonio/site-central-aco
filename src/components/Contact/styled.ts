@@ -39,6 +39,14 @@ export const ContentContact = styled.div`
   background-color: ${({ theme }) => theme.colors["base-bg"]};
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 
+  #Maps {
+    width: min(25rem, 25vw);
+    height: 14rem;
+    border: none;
+    border-radius: 10px;
+    margin-top: 1rem;
+  }
+
   @media (max-width: 680px) {
     height: max-content;
     padding: 2rem;
@@ -74,16 +82,9 @@ export const ContainerEmailAndWhatsapp = styled.div`
 
 export const ContentEmailAndWhatsapp = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 0.3rem;
-
-  h1 {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-  }
+  gap: 1rem;
 
   a {
     font-size: ${({ theme }) => theme.FontSizes["text-regular-sm"]};
@@ -97,7 +98,6 @@ export const ContentEmailAndWhatsapp = styled.div`
     align-items: flex-start;
     justify-content: center;
     gap: 0.3rem;
-    margin-left: 2.7rem;
   }
 
   @media (max-width: 680px) {

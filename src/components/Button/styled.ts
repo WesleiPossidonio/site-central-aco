@@ -20,4 +20,8 @@ background-color: ${({ theme, bgColor }) => theme.colors[`base-${bgColor ?? 'bg'
 z-index: 1;
 
 cursor: pointer;
+
+a {
+  color: ${({theme, bgColor}) => bgColor === 'white' ? theme.colors["base-text"] : theme.colors["base-white"]};
+}
 `

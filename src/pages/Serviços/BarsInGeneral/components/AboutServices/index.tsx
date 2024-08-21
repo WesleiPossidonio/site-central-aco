@@ -6,7 +6,7 @@ import {
   StyleImg 
 } from "./styled"
 
-import ImgService from '../../../../../assets/ImgBannerFour.jpg'
+import ImgService from '../../../../../assets/ImgBannerFour.webp'
 
 export const AboutServices = () => {
   return (

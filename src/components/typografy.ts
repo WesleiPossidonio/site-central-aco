@@ -18,6 +18,10 @@ export const TextRegular = styled.p<RegularTextProps>`
     theme.FontSizes[`text-regular-${size ?? 's'}`]};
   line-height: 150%;
   font-weight: ${({ weight }) => weight ?? 400};
+
+  a {
+    color: ${({ theme, color }) => theme.colors[`base-${color ?? 'text'}`]};
+  }
 `
 export const TitleText = styled.h1<TitleTextProps>`
   color: ${({ theme, color }) => theme.colors[`base-${color ?? 'text'}`]};

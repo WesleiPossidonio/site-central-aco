@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { ContainerFeedInstagram, ContainerTitle, ContentFeedInstagram, LinkPost } from "./styled"
 import api from "../../../../Services/api"
 import { TextRegular, TitleText } from "../../../../components"
+import AOS from 'aos'
 
 interface FeedInstragramProps {
   id: string
@@ -14,6 +15,10 @@ interface FeedInstragramProps {
 export const FeedInstagram = () => {
 
   const [feedList, setFeedList] = useState<FeedInstragramProps[]>([])
+
+  useEffect(() => {
+    AOS.init()
+  }, [])
 
   useEffect(() => {
     try {
@@ -40,7 +45,7 @@ export const FeedInstagram = () => {
       <ContentFeedInstagram>
         {
           feedList.slice(0, 6).map(post => {
-            return <LinkPost key={post.id} href={post.permalink} target="_blank">
+            return <LinkPost key={post.id} href={post.permalink} target="_blank" data-aos="zoom-in" data-aos-duration="1000">
               <TextRegular size="sm" color="white" weight={500}>{post.caption}</TextRegular>
               {
                 post.media_type !== 'IMAGE' ? <video controls><source src={post.media_url} /></video> : <img src={post.media_url} alt="" />

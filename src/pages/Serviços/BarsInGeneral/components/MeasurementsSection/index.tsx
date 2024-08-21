@@ -1,9 +1,18 @@
-
-import { TextRegular, TitleSection } from "../../../../../components"
-import { ContainerMeasurements, HeaderSection, MeasurementContent, Selected } from "./styled"
-import { TableBarrasQuadradas, TableBarrasRedondas, TableBarrasT, TableBarsInGeneral } from "../../../../../components/Tables"
 import { useState } from "react"
+import { TextRegular, TitleSection } from "../../../../../components"
+import { 
+  ContainerMeasurements, 
+  HeaderSection, 
+  MeasurementContent, 
+  Selected 
+} from "./styled"
 
+import { 
+  TableBarrasQuadradas, 
+  TableBarrasRedondas, 
+  TableBarrasT, 
+  TableBarsInGeneral 
+} from "../../../../../components/Tables"
 
 export const MeasurementsSection = () => {
   const [optionSelected, setOptionSelected] = useState<string>('')

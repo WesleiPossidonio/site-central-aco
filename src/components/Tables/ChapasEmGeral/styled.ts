@@ -18,11 +18,13 @@ export const TableHeader = styled.th`
   border: 1px solid #000;
   padding: 8px;
   font-weight: bold;
+  color: ${({theme}) => theme.colors['base-white']};
 `;
 
 export const TableRow = styled.tr`
   &:nth-child(even) {
     background-color: #f2f2f2;
+    
   }
 `;
 

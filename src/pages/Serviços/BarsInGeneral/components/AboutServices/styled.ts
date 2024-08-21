@@ -28,10 +28,9 @@ export const StyleImg = styled.div`
   border-radius: 12px;
   background-color: ${({ theme }) => theme.colors["base-bg"]};
 
-  /* @media (max-width: 667px) {
-    width: 22rem;
-    order: 2;
-  } */
+  @media (max-width: 667px) {
+    display: none;
+  }
 `;
 
 export const ImageService = styled.img`
@@ -60,7 +59,6 @@ export const ContentText = styled.div`
   }
 
   @media (max-width: 667px) {
-    /* width: 100%; */
-    display: none;
+    width: 100%;
   }
 `;

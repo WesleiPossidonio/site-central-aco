@@ -1,7 +1,7 @@
 import { TextRegular, TitleText } from '../../../../../components'
 import { ContainerBanner } from './styled'
 
-import ImageBanner from '../../../../../assets/ImgBannerTwo.jpg'
+import ImageBanner from '../../../../../assets/ImgBannerTwo.webp'
 
 export const BannerServices = () => {
   return (

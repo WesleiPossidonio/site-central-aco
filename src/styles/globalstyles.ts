@@ -8,6 +8,8 @@ export const GlobalStyle = createGlobalStyle`
     outline: 0;
     font-family: "Roboto", sans-serif;
 
+    scroll-behavior: smooth;
+    scroll-margin: 3rem;
     text-decoration: none;
   }
 
@@ -22,6 +24,6 @@ export const GlobalStyle = createGlobalStyle`
  }
 
  body {
-   background: ${({ theme }) => theme.colors['base-white']}
+   background: ${({ theme }) => theme.colors['base-white']};
  }
 `
