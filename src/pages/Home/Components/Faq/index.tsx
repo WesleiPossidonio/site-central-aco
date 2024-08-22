@@ -34,14 +34,14 @@ export const Faq = () => {
               aria-controls="panel1-content"
               id="panel1-header"
             >
-              <Typography>O que é uma farmácia de manipulação?</Typography>
+              <Typography>Quais tipos de aço vocês fornecem?</Typography>
             </AccordionContent>
             <AccordionDetails>
               <Typography>
-                Uma farmácia de manipulação é um estabelecimento
-                onde os medicamentos são preparados de forma personalizada,
-                conforme prescrição médica, ajustados às necessidades
-                individuais de cada paciente.
+                Oferecemos uma ampla variedade de aços, incluindo aços carbono, 
+                inoxidáveis, galvanizados, laminados a quente e a frio, além de 
+                ligas especiais. Nossos produtos são customizáveis conforme a 
+                necessidade do seu projeto.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -52,14 +52,14 @@ export const Faq = () => {
               aria-controls="panel2-content"
               id="panel2-header"
             >
-              <Typography>Quais são as vantagens dos medicamentos manipulados?</Typography>
+              <Typography>Como funciona o processo de corte sob medida?</Typography>
             </AccordionContent>
             <AccordionDetails>
               <Typography>
-                Os medicamentos manipulados oferecem vantagens como
-                personalização das dosagens e ingredientes, adaptação às
-                necessidades específicas do paciente, e possibilidade de
-                combinação de diferentes substâncias em uma única formulação.
+                O processo de corte sob medida começa com a especificação exata 
+                das dimensões e características que você precisa. Utilizamos 
+                tecnologia de corte avançada, como corte a laser, plasma e 
+                oxicorte, para garantir precisão e qualidade em cada peça.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -88,13 +88,14 @@ export const Faq = () => {
               aria-controls="panel2-content"
               id="panel2-header"
             >
-              <Typography>Os medicamentos manipulados são seguros?</Typography>
+              <Typography>Qual é o prazo de entrega para pedidos personalizados?</Typography>
             </AccordionContent>
             <AccordionDetails>
               <Typography>
-                Sim, os medicamentos manipulados são seguros quando preparados
-                por farmácias de manipulação regulamentadas e que seguem as boas
-                práticas de manipulação estabelecidas pela legislação sanitária.
+                O prazo de entrega varia de acordo com a complexidade do pedido 
+                e a quantidade solicitada. Em média, entregamos pedidos 
+                personalizados em um prazo de 7 a 14 dias úteis, 
+                após a confirmação do pedido.
               </Typography>
             </AccordionDetails>
           </Accordion>

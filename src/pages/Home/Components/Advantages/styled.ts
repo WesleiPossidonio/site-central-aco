@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerAdvantages = styled.section`
+
   width: 100%;
   max-width: 112.5rem;
   height: 45rem;
@@ -58,6 +59,15 @@ export const ListAdvantages = styled.div`
   grid-template-columns: repeat(2, minmax(50%, 1fr));
   grid-gap: 1rem;
   margin-top: 1rem;
+
+  @media (max-width: 696px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
 `;
 
 export const AdvantageBox = styled.div`

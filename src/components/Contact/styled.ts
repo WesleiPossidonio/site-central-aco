@@ -50,6 +50,10 @@ export const ContentContact = styled.div`
   @media (max-width: 680px) {
     height: max-content;
     padding: 2rem;
+
+    #Maps {
+    margin-bottom: 2rem;
+  }
   }
 `;
 

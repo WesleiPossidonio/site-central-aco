@@ -38,7 +38,7 @@ export const ContainerImage = styled.div`
   }
 
   @media (max-width: 767px) {
-    width: 100%;
+    width: 95%;
     order: 2;
     margin-left: 4rem;
     margin-bottom: 3rem;

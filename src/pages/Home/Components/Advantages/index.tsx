@@ -94,7 +94,7 @@ export const Advantages = () => {
         </BoxImage>
 
         <BoxNumber>
-          <TitleText size="xl" color="bg">+<CountUp end={1000} duration={5} /></TitleText>
+          <TitleText size="xl" color="bg">+<CountUp end={1000} duration={10} /></TitleText>
           <TitleText>Clientes <br /> Satisfeitos</TitleText>
         </BoxNumber>
       </ContentImg>
