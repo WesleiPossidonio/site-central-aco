@@ -19,8 +19,7 @@ export const AboutServices = () => {
           <TitleSection
             PositionTitle="flex-start"
             SubTitleColor="text"
-            TextSubTitle="CHAPAS"
-            TextTitle="Chapas em Geral"
+            TextSubTitle="Chapas em Geral"
             line={false}
           />
 

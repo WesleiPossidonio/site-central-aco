@@ -24,20 +24,23 @@ export const About = () => {
   return (
     <ContainerAbout id='about'>
       <ContainerImage data-aos="zoom-in" data-aos-duration="1000">
-        <span>
-          <TitleText size="xll" weight={700} color="bg">+20</TitleText>
-          <TitleText size="m" color="text">Anos no Mercado</TitleText>
-        </span>
         <ImgAbout src={ImgABoutOne} />
-        <ImgAboutBotton src={ImgABoutTwo} />
+
+        <div>
+          <ImgAboutBotton src={ImgABoutTwo} />
+          <span>
+            <TitleText size="xll" weight={700} color="bg">+20</TitleText>
+            <TitleText size="m" color="text">Anos no Mercado</TitleText>
+          </span>
+        </div>
+
       </ContainerImage>
 
       <ContainerTextAbout data-aos="fade-left" data-aos-duration="1000">
         <TitleSection
           PositionTitle='flex-start'
-          SubTitleColor='text'
-          TextSubTitle='SOBRE'
-          TextTitle='Sobre Nós'
+          SubTitleColor='gray-200'
+          TextSubTitle='Sobre Nós'
           line={false}
         />
         {/* <TitleText size="s">Sobre Nós</TitleText> */}
@@ -46,16 +49,16 @@ export const About = () => {
         </TitleText>
 
         <TextRegular>
-          Nossa história é construída com aço e compromisso. 
-          <strong> Com anos de experiência, somos especialistas em fornecer 
-          as soluções certas </strong>  para tornar seus projetos mais fortes e duráveis. 
+          Nossa história é construída com aço e compromisso.
+          <strong> Com anos de experiência, somos especialistas em fornecer
+            as soluções certas </strong>  para tornar seus projetos mais fortes e duráveis.
           <strong> Confiança, qualidade e dedicação estão na base de tudo o que fazemos. </strong>
         </TextRegular>
 
         <TextRegular>
-           Aqui, cada detalhe importa. <strong> Do atendimento personalizado à entrega 
-           pontual, </strong> estamos sempre ao seu lado, garantindo que <strong> suas expectativas 
-           sejam superadas em cada etapa do processo. </strong>
+          Aqui, cada detalhe importa. <strong> Do atendimento personalizado à entrega
+            pontual, </strong> estamos sempre ao seu lado, garantindo que <strong> suas expectativas
+              sejam superadas em cada etapa do processo. </strong>
         </TextRegular>
 
         <Button bgColor='bg' btnLarge={false}>Fazer Pedido!</Button>

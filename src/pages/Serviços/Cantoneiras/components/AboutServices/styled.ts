@@ -12,13 +12,9 @@ export const ContainerAboutService = styled.section`
 
   padding: 3rem;
 
-  /* @media (max-width: 667px) {
-    height: max-content;
-    flex-wrap: wrap;
-    gap: 3.5rem;
-    padding: 2.5rem;
-    margin-top: 3rem;
-  } */
+  @media (max-width: 667px) {
+  padding: 1.5rem;
+  }
 `;
 
 export const StyleImg = styled.div`
@@ -32,6 +28,10 @@ export const StyleImg = styled.div`
     width: 22rem;
     order: 2;
   } */
+
+    @media (max-width: 667px) {
+    display: none;
+  }
 `;
 
 export const ImageService = styled.img`
@@ -60,7 +60,6 @@ export const ContentText = styled.div`
   }
 
   @media (max-width: 667px) {
-    /* width: 100%; */
-    display: none;
+    width: 100%;
   }
 `;

@@ -5,7 +5,8 @@ interface HeaderTitleProps {
 }
 
 export const HeaderTitle = styled.div<HeaderTitleProps>`
-  width: ${({ PositionTitle }) => PositionTitle === 'center' ? 'none' : '100%'};
+  width: ${({ PositionTitle }) =>
+    PositionTitle === "center" ? "none" : "100%"};
   display: flex;
   align-self: ${({ PositionTitle }) => PositionTitle};
   justify-content: center;
@@ -14,20 +15,24 @@ export const HeaderTitle = styled.div<HeaderTitleProps>`
   display: flex;
   flex-direction: column;
 
-  #line {
-    width: 6%;
-    margin: 0 0 2rem 0.4rem;
-    border-bottom: 4px solid #fff;
-  }
-
   h1 {
     left: ${({ PositionTitle }) => PositionTitle === "center" && "3.3rem"};
   }
 `;
 
 interface SubTitleProps {
-  SubTitleColor: "text" | "white";
+  SubTitleColor: "text" | "white" | "gray-200";
 }
+
+export const Line = styled.div<SubTitleProps>`
+  width: 6%;
+  margin: 0 0 2rem 0.4rem;
+  border-bottom: 4px solid
+    ${({ theme, SubTitleColor }) =>
+      SubTitleColor === "gray-200"
+        ? theme.colors["base-text"]
+        : theme.colors["base-white"]};
+`;
 
 export const SubTitle = styled.span<SubTitleProps>`
   opacity: ${({ SubTitleColor }) => (SubTitleColor === "text" ? "0.5" : "0.7")};

@@ -31,8 +31,7 @@ export const Advantages = () => {
       <ContentText data-aos="fade-right" data-aos-duration="1000">
         <TitleSection
           PositionTitle='flex-start'
-          TextSubTitle='VANTAGENS'
-          TextTitle='Nossas Vantagens'
+          TextSubTitle='Nossas Vantagens'
           SubTitleColor='text'
           line={false}
         />

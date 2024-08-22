@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerMeasurements = styled.section`
-  width: 90%;
+  width: 100%;
   max-width: 110rem;
 
   display: flex;
@@ -15,7 +15,7 @@ export const ContainerMeasurements = styled.section`
   padding: 3rem;
 
   @media (max-width: 726px) {
-    padding: 1rem;
+    padding: 1.5rem;
   }
 `;
 

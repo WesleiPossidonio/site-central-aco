@@ -59,7 +59,11 @@ export const CardSwiper = styled(SwiperSlide)`
   }
 
   &:hover {
-    opacity: 0.8;
+    background-color: ${({ theme }) => theme.colors["base-gray"]};
+
+    p {
+      color: ${({ theme }) => theme.colors["base-text"]}
+    }
   }
 `;
 

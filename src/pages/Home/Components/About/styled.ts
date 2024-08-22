@@ -34,7 +34,7 @@ export const ContainerImage = styled.div`
     position: absolute;
     transform: rotate(-90deg);
     top: 10%;
-    left: -3rem;
+    left: -4rem;
   }
 
   @media (max-width: 767px) {
@@ -44,7 +44,7 @@ export const ContainerImage = styled.div`
     margin-bottom: 3rem;
 
     span {
-      left: 5rem;
+      left: -2rem;
     }
   }
 

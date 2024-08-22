@@ -29,8 +29,7 @@ export const SectionServices = () => {
         <TitleSection
           line={true}
           PositionTitle='flex-start'
-          TextSubTitle='SERVIÇOS'
-          TextTitle='Nossos Serviços'
+          TextSubTitle='Nossos Produtos'
           SubTitleColor='white'
         />
 

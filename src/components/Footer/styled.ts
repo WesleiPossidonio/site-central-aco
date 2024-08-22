@@ -25,11 +25,31 @@ export const ContentLogo = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 0.8rem;
+  gap: 1rem;
 
   p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.3rem;
+  }
+
+   a {
+    font-weight: 700;
     cursor: pointer;
   }
+
+  #company-img {
+    width: 5.5rem;
+  }
+
+    &:hover {
+      a {
+        color : ${({ theme }) => theme.colors["base-bg"]};
+    }
+
+        
+      }
 
   @media (max-width: 696px) {
     order: 3;

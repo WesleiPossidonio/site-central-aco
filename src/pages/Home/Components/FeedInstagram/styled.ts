@@ -32,7 +32,7 @@ export const ContainerTitle = styled.div`
 `;
 
 export const ContentFeedInstagram = styled.div`
-max-width: 100%;
+  max-width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(14.625rem, 7vw));
   gap: 1.5rem;
@@ -42,18 +42,18 @@ max-width: 100%;
 
   @media (min-width: 1024px) {
     max-width: 70rem;
- }
+  }
 
   @media (max-width: 433px) {
     max-width: 100%;
     grid-template-columns: repeat(2, minmax(11.625rem, 3vw));
     padding: 0;
-}
+  }
 `;
 
 export const LinkPost = styled.a`
   position: relative;
-
+  border-radius: 13px;
   p {
     display: none;
     position: absolute;
@@ -61,6 +61,7 @@ export const LinkPost = styled.a`
     left: 1rem;
     right: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+   
   }
 
   img,

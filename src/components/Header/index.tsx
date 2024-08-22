@@ -38,6 +38,12 @@ export const HeaderMenu = () => {
     <ContainerHeaderMenu stateHeader={stateBackgroundHeader}>
       <ImgLogo src={Logo} onClick={() => navigate('/')} />
 
+      {isOpen ? (
+        <X size={35} weight="bold" onClick={handleStateMenuMobile} />
+      ) : (
+        <List size={35} weight="bold" onClick={handleStateMenuMobile} />
+      )}
+
       <NavDesktop>
         <NavLink
           stateHeader={stateBackgroundHeader}
@@ -69,26 +75,35 @@ export const HeaderMenu = () => {
         >
           Contatos
         </NavLink>
-      </NavDesktop>
 
-      {isOpen ? (
-        <X size={35} weight="bold" onClick={handleStateMenuMobile} />
-      ) : (
-        <List size={35} weight="bold" onClick={handleStateMenuMobile} />
-      )}
+        <NavLink
+          stateHeader={stateBackgroundHeader}
+          href="#"
+
+        >
+          Central Express
+        </NavLink>
+      </NavDesktop>
 
       <NavMobile isOpen={isOpen}>
         <NavLinkMobile href="#home" onClick={handleStateMenuMobile}>
           Home
         </NavLinkMobile>
+
         <NavLinkMobile href="#about" onClick={handleStateMenuMobile}>
           Sobre Nós
         </NavLinkMobile>
+
         <NavLinkMobile href="#principes" onClick={handleStateMenuMobile}>
-        Serviços
+          Serviços
         </NavLinkMobile>
+
         <NavLinkMobile href="#Contatos" onClick={handleStateMenuMobile}>
           Contatos
+        </NavLinkMobile>
+
+        <NavLinkMobile href="#Contatos" onClick={handleStateMenuMobile}>
+          Central Express
         </NavLinkMobile>
 
       </NavMobile>

@@ -20,7 +20,6 @@ export const AboutServices = () => {
             PositionTitle="flex-start"
             SubTitleColor="text"
             TextSubTitle="Cantoneiras"
-            TextTitle="Cantoneiras"
             line={false}
           />
 

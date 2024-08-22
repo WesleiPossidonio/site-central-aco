@@ -129,23 +129,20 @@ export const ContentForm = styled.form`
     margin-top: 1rem;
   }
 
-  #rc-anchor-container {
-      width: 10%;
-    }
-
   #reCaptcha {
-    min-width: 75%;
+    align-self: flex-start;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0;
   }
 
   @media (max-width: 680px) {
     width: 100%;
-    padding: 0;
-  }
-
-  @media (max-width: 320px) {
 
     #reCaptcha {
-      margin-left: -2.5rem;
+      transform: scale(0.7); /* Reduz o tamanho para 80% */
+      transform-origin: 0 0; /* Ajusta o ponto de origem da escala */
     }
   }
 `;

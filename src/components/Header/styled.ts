@@ -66,6 +66,7 @@ export const NavLink = styled.a<HeaderProps>`
 
 export const ImgLogo = styled.img`
 width: 9.2rem;
+z-index: 999;
 `
 
 interface NavMobileProps {
@@ -81,7 +82,7 @@ export const NavMobile = styled.nav<NavMobileProps>`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem;
 
   position: absolute;
   bottom: 0;
@@ -97,5 +98,6 @@ export const NavMobile = styled.nav<NavMobileProps>`
 export const NavLinkMobile = styled(NavLink)`
   font-size: ${({ theme }) => theme.FontSizes["title-regular-m"]};
   color: ${({ theme }) => theme.colors['base-bg']};
+  font-weight: 500;
 `
 

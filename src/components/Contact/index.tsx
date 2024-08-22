@@ -1,15 +1,11 @@
-
 import { MapPinArea, Phone, Envelope } from "@phosphor-icons/react"
 import api from "../../Services/api"
-
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { toast } from "react-toastify"
 import { useEffect, useState } from "react"
 import * as zod from 'zod'
 import AOS from 'aos'
-
-
 import {
   ContainerContact,
   ContainerEmailAndWhatsapp,
@@ -20,26 +16,25 @@ import {
   ContentTitle,
   TextArea
 } from "./styled"
-
 import { Button, TextRegular, TitleText, Input } from ".."
 import 'aos/dist/aos.css';
 import ReCAPTCHA from "react-google-recaptcha"
-
 
 const sendEmailFormSchema = zod.object({
   name: zod.string().min(3, 'Por gentileza, digite o seu nome'),
   email: zod.string().email('Por gentileza, digite o seu email corretamente'),
   phone: zod
     .string()
-    .min(11, 'Por gentileza, digite o nemuro de telefone corretamente')
+    .min(11, 'Por gentileza, digite o numero de telefone corretamente')
     .max(11, 'Por gentileza, digite o numero sem caractere'),
   subject_text: zod.string().min(3, 'Digite sua dúvida'),
   subject_title: zod.string().min(3, 'Digite sua dúvida'),
 })
 
 type createSendEmailFormInputs = zod.infer<typeof sendEmailFormSchema>
+
 export const Contact = () => {
-  const [captcha, setCaptcha] = useState('')
+  const [captcha, setCaptcha] = useState<string | null>('')
 
   const {
     register,
@@ -57,16 +52,6 @@ export const Contact = () => {
   const handleSendEmail = async (data: createSendEmailFormInputs) => {
     const { email, name, phone, subject_text, subject_title } = data
 
-    const dataSendEmail = {
-      email,
-      name,
-      phone,
-      subject_text,
-      subject_title
-    }
-    console.log(dataSendEmail)
-    reset()
-
     if (!captcha) {
       toast.error("Captcha pendente!", {
         position: "top-right"
@@ -74,21 +59,30 @@ export const Contact = () => {
       return;
     }
 
+    const dataSendEmail = {
+      email,
+      name,
+      phone,
+      subject_text,
+      subject_title,
+      captcha, // Incluindo o token reCAPTCHA
+    }
+    
     try {
       await toast.promise(api.post('sendMail', dataSendEmail), {
         pending: 'Verificando seus dados',
         success: 'Dúvida enviada com sucesso!',
         error: 'Verifique seus dado e faça novamente! 🤯',
       })
+      reset()
+      setCaptcha(null) // Resetando o captcha após o envio
     } catch (error) {
       console.log(error)
     }
   }
 
   const handleCapcha = (token: string | null) => {
-    if (token !== null) {
-      setCaptcha(token)
-    }
+    setCaptcha(token)
   }
 
   return (
@@ -98,22 +92,20 @@ export const Contact = () => {
           <TitleText size="s" color="white">
             CONTATO
           </TitleText>
-
           <TitleText size="l" color="white">
-            Entre em  contato conosco.
+            Entre em contato conosco.
           </TitleText>
         </ContentTitle>
 
         <ContentInfo>
-
           <ContainerEmailAndWhatsapp>
             <ContentEmailAndWhatsapp>
               <Phone size={45} color="#fff" />
               <div>
                 <TitleText size="s" color="white">Telefones:</TitleText>
                 <TextRegular color="white">
-                  <a href="tel:+552227626481">(22) 2762-6481</a> / {' '}
-                  <a href="tel:+55222762-925">(22) 2762-2925</a>
+                <strong>Macaé:</strong>{' '} 
+                <a href="tel:+55222762-2717">(22) 2762-2717</a>
                 </TextRegular>
               </div>
             </ContentEmailAndWhatsapp>
@@ -123,8 +115,8 @@ export const Contact = () => {
               <div>
                 <TitleText size="s" color="white">E-mail</TitleText>
                 <TextRegular color="white"><strong>Macaé:</strong>{' '}
-                  <a href="mailto:orcamento@farmaciaaguaviva.com">
-                    orcamento@farmaciaaguaviva.com
+                  <a href="mailto:vendas@centraldeacos.com.br">
+                    vendas@centraldeacos.com.br
                   </a>
                 </TextRegular>
               </div>
@@ -135,7 +127,7 @@ export const Contact = () => {
               <div>
                 <TitleText size="s" color="white">Endereços</TitleText>
                 <TextRegular color="white" weight={500}>
-                  <a href=""> Rua Dr Julio Olivier, 320, Centro, Macaé/RJ </a>
+                  <a href="#"> R. Evaldo Costa, 1103 - Sol Y Mar, Macaé - RJ </a>
                 </TextRegular>
               </div>
             </ContentEmailAndWhatsapp>
@@ -179,18 +171,12 @@ export const Contact = () => {
               <ReCAPTCHA
                 sitekey={import.meta.env.VITE_RECAPTCHA_KEY}
                 onChange={handleCapcha}
-                id="reCaptcha"
               />
             </div>
             <Button bgColor="white" btnLarge={false}>Enviar</Button>
-
           </ContentForm>
-
         </ContentInfo>
       </ContentContact>
-
     </ContainerContact>
   )
 }
-
-

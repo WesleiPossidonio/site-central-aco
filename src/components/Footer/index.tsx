@@ -1,18 +1,35 @@
 import { Envelope, MapPin, WhatsappLogo } from "@phosphor-icons/react"
-
-import { ContainerFooter, ContentContact, ContentLinkSite, ContentLogo, ImgLogo, LinkSite, TitleLinks } from "./styled"
-
 import Logo from '../../assets/logo.png'
+import LogoCriard from '../../assets/criard_logo.png'
 import { TextRegular, TitleText } from "../typografy"
+import {
+  ContainerFooter,
+  ContentContact,
+  ContentLinkSite,
+  ContentLogo,
+  ImgLogo,
+  LinkSite,
+  TitleLinks
+} from "./styled"
+
+
 
 export const Footer = () => {
   return (
     <ContainerFooter>
       <ContentLogo>
         <ImgLogo src={Logo} />
-        <TextRegular color="text">
-          Central de Aços © 2024 - Todos os direitos reservados.
-        </TextRegular>
+
+        <div>
+          <TextRegular color="text" size="sm" weight={600}>
+            Desenvolvido por
+            <a href="https://www.criard.com.br/" target="_blank" ><img id="company-img" src={LogoCriard} alt="" /></a>
+          </TextRegular>
+
+          <TextRegular color="text" size="s">
+            Central de Aços © 2024 - Todos os direitos reservados.
+          </TextRegular>
+        </div>
       </ContentLogo>
 
       <ContentLinkSite>
@@ -31,6 +48,9 @@ export const Footer = () => {
           </TextRegular>
           <TextRegular color="text" weight={600}>
             <a href="#contact">Contatos</a>
+          </TextRegular>
+          <TextRegular color="text" weight={600}>
+            <a href="#">Central Express</a>
           </TextRegular>
         </LinkSite>
       </ContentLinkSite>
@@ -64,7 +84,7 @@ export const Footer = () => {
           <MapPin size={31} color="#000" />
           <div>
             <TextRegular weight={600}>Matrix Macaé</TextRegular>
-            <TextRegular size="sm" color="text">Rua Dr Julio Olivier, 320</TextRegular>
+            <TextRegular size="sm" color="text"> R. Evaldo Costa, 1103 - Sol Y Mar, Macaé - RJ</TextRegular>
           </div>
         </TitleLinks>
 
