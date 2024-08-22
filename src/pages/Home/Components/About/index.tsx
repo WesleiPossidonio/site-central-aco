@@ -24,15 +24,15 @@ export const About = () => {
   return (
     <ContainerAbout id='about'>
       <ContainerImage data-aos="zoom-in" data-aos-duration="1000">
-        <ImgAbout src={ImgABoutOne} />
-
-        <div>
-          <ImgAboutBotton src={ImgABoutTwo} />
+        <div id='boxTextImage'>
+          <ImgAbout src={ImgABoutOne} />
           <span>
             <TitleText size="xll" weight={700} color="bg">+20</TitleText>
             <TitleText size="m" color="text">Anos no Mercado</TitleText>
           </span>
         </div>
+
+        <ImgAboutBotton src={ImgABoutTwo} />
 
       </ContainerImage>
 

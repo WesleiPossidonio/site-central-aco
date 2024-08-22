@@ -27,14 +27,17 @@ export const ContainerImage = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: center;
-
   position: relative;
+
+  #boxTextImage {
+    position: relative;
+  }
 
   span {
     position: absolute;
     transform: rotate(-90deg);
-    top: 10%;
-    left: -4rem;
+    top: 8.5%;
+    left: -10rem;
   }
 
   @media (max-width: 767px) {
@@ -42,10 +45,6 @@ export const ContainerImage = styled.div`
     order: 2;
     margin-left: 4rem;
     margin-bottom: 3rem;
-
-    span {
-      left: -2rem;
-    }
   }
 
   @keyframes moveY {
@@ -130,6 +129,7 @@ export const ContainerTextAbout = styled.div`
   button {
     margin-top: 1rem;
   }
+
 
   @media (max-width: 767px) {
     width: 100%;
