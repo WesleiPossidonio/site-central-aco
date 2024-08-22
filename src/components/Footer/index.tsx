@@ -5,6 +5,7 @@ import { TextRegular, TitleText } from "../typografy"
 import {
   ContainerFooter,
   ContentContact,
+  ContentLinkLogo,
   ContentLinkSite,
   ContentLogo,
   ImgLogo,
@@ -20,16 +21,16 @@ export const Footer = () => {
       <ContentLogo>
         <ImgLogo src={Logo} />
 
-        <div>
+        <ContentLinkLogo>
+          <TextRegular color="text" size="s">
+            Central de Aços © 2024 - Todos os direitos reservados.
+          </TextRegular>
+          
           <TextRegular color="text" size="sm" weight={600}>
             Desenvolvido por
             <a href="https://www.criard.com.br/" target="_blank" ><img id="company-img" src={LogoCriard} alt="" /></a>
           </TextRegular>
-
-          <TextRegular color="text" size="s">
-            Central de Aços © 2024 - Todos os direitos reservados.
-          </TextRegular>
-        </div>
+        </ContentLinkLogo>
       </ContentLogo>
 
       <ContentLinkSite>

@@ -57,6 +57,13 @@ export const ContentLogo = styled.div`
   }
 `;
 
+export const ContentLinkLogo = styled.div`
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+`
+
 export const ContentContact = styled(ContentLogo)`
   @media (max-width: 696px) {
     order: 2;

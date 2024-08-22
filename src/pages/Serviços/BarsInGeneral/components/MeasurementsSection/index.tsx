@@ -43,8 +43,7 @@ export const MeasurementsSection = () => {
         <TitleSection
           PositionTitle="flex-start"
           SubTitleColor="text"
-          TextSubTitle="Selecione"
-          TextTitle="Medidas"
+          TextSubTitle="Medidas"
           line={false}
         />
 
