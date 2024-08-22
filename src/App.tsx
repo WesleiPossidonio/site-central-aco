@@ -5,20 +5,15 @@ import { BrowserRouter } from "react-router-dom"
 import { Router } from "./Routes/routes"
 import { GlobalStyle } from "./styles/globalstyles"
 import { DefaultThemes } from "./styles/theme/default"
-import { HeaderLinks } from "./pages/Home/Components"
 import { Footer, HeaderMenu, WhatsappButton } from "./components"
-import { Header } from "./pages/Home/styled"
 import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
   return (
     <BrowserRouter>
       <ThemeProvider theme={DefaultThemes}>
-        <Header>
-          <HeaderLinks />
-          <HeaderMenu />
-        </Header>
         <WhatsappButton />
+        <HeaderMenu />
         <Router />
         <Footer />
         <ToastContainer />

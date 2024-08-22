@@ -47,7 +47,7 @@ export const ImgFaq = styled.img`
   width: min(35rem, 45vw);
 
   @media (max-width: 726px) {
-    width: min(45rem, 95vw);
+    width: min(35rem, 75vw);
     order: 2;
   }
 `;

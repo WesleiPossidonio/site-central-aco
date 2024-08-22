@@ -10,9 +10,9 @@ gap: 2rem;
 position: relative;
 `
 
-export const Header = styled.header`
-width: 100%;
-height: 8rem;
-position: fixed;
-z-index: 99;
-`
+// export const Header = styled.header`
+// width: 100%;
+// height: 8rem;
+// position: fixed;
+// z-index: 99;
+// `

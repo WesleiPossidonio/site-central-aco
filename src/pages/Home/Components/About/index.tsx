@@ -58,7 +58,7 @@ export const About = () => {
            sejam superadas em cada etapa do processo. </strong>
         </TextRegular>
 
-        <Button bgColor='bg' btnLarge={false}>Saíba Mais!</Button>
+        <Button bgColor='bg' btnLarge={false}>Fazer Pedido!</Button>
       </ContainerTextAbout>
     </ContainerAbout>
   )

@@ -23,7 +23,7 @@ export const CallAction = () => {
               em realidade. A hora de agir é agora
             </TextRegular>
             <Button btnLarge bgColor="white">
-              <a href="https://api.whatsapp.com/send?phone=552227622717&text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento" target="_blank">Saiba Mais!</a></Button>
+              <a href="https://api.whatsapp.com/send?phone=552227622717&text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento" target="_blank">Faça o seu Pedido!</a></Button>
         </ContentText>
         <Image src={Img} />
       </ContentCallAction>

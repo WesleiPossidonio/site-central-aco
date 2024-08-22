@@ -3,7 +3,7 @@ import ImageBoxTwo from '../../../../assets/ImgAdvantagesTwo.webp'
 import ImageBoxThree from '../../../../assets/ImgAdvantagesThree.webp'
 
 //Components and Styles
-import { Button, TextRegular, TitleSection, TitleText } from "../../../../components"
+import { TextRegular, TitleSection, TitleText } from "../../../../components"
 import {
   AdvantageBox,
   BoxImage,
@@ -82,10 +82,6 @@ export const Advantages = () => {
             </div>
           </AdvantageBox>
         </ListAdvantages>
-
-        <Button bgColor='bg' btnLarge={false}>
-          <a href="https://api.whatsapp.com/send?phone=552227622717&text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento" target='_blank'>Saiba Mais!</a>
-        </Button>
       </ContentText>
 
       <ContentImg data-aos="zoom-in" data-aos-duration="1000">

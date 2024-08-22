@@ -75,7 +75,7 @@ export const SectionServices = () => {
           <ContentTextCard>
             <TitleText>Barras em Geral</TitleText>
             <TextRegular size='s'>Estrutura sólida começa com as nossas barras de alta qualidade.</TextRegular>
-            <TextRegular size='m' color='bg' weight={500} onClick={() => navigate('/barras-em-geral')}>Saiba Mais!</TextRegular>
+            <TextRegular size='m' color='bg' weight={500} onClick={() => navigate('/barras-em-geral')}>Ver Medidas</TextRegular>
           </ContentTextCard>
         </CardSwiper>
 
@@ -85,7 +85,7 @@ export const SectionServices = () => {
           <ContentTextCard>
             <TitleText>Cantoneira</TitleText>
             <TextRegular>Cantoneiras que garantem o ângulo perfeito e a resistência que sua obra precisa.</TextRegular>
-            <TextRegular size='m' color='bg' weight={500} onClick={() => navigate('/cantoneira')}>Saiba Mais!</TextRegular>
+            <TextRegular size='m' color='bg' weight={500} onClick={() => navigate('/cantoneira')}>Ver Medidas</TextRegular>
           </ContentTextCard>
         </CardSwiper>
 
@@ -95,7 +95,7 @@ export const SectionServices = () => {
           <ContentTextCard>
             <TitleText>Chapas em Geral</TitleText>
             <TextRegular>Versatilidade e força em cada chapa para suas soluções estruturais.</TextRegular>
-            <TextRegular size='m' color='bg' weight={500} onClick={() => navigate('/chapas-em-geral')}>Saiba Mais!</TextRegular>
+            <TextRegular size='m' color='bg' weight={500} onClick={() => navigate('/chapas-em-geral')}>Ver Medidas</TextRegular>
           </ContentTextCard>
         </CardSwiper>
 
@@ -105,7 +105,7 @@ export const SectionServices = () => {
           <ContentTextCard>
             <TitleText>Vigas em Geral</TitleText>
             <TextRegular>Vigas robustas que sustentam grandes ideias e projetos grandiosos.</TextRegular>
-            <TextRegular size='m' color='bg' weight={500}>Saiba Mais!</TextRegular>
+            <TextRegular size='m' color='bg' weight={500}>Ver Medidas</TextRegular>
           </ContentTextCard>
 
         </CardSwiper>
@@ -116,7 +116,7 @@ export const SectionServices = () => {
           <ContentTextCard>
             <TitleText>Tarugos</TitleText>
             <TextRegular>Tarugos de precisão para resultados impecáveis e duradouros.</TextRegular>
-            <TextRegular size='m' color='bg' weight={500}>Saiba Mais!</TextRegular>
+            <TextRegular size='m' color='bg' weight={500}>Ver Medidas</TextRegular>
           </ContentTextCard>
 
         </CardSwiper>
@@ -127,7 +127,7 @@ export const SectionServices = () => {
           <ContentTextCard>
             <TitleText>Telas Telcon</TitleText>
             <TextRegular>Proteção e segurança com as telas Telcon que você pode confiar.</TextRegular>
-            <TextRegular size='m' color='bg' weight={500}>Saiba Mais!</TextRegular>
+            <TextRegular size='m' color='bg' weight={500}>Ver Medidas</TextRegular>
           </ContentTextCard>
         </CardSwiper>
 
@@ -137,7 +137,7 @@ export const SectionServices = () => {
           <ContentTextCard>
             <TitleText>Tubos em Geral</TitleText>
             <TextRegular>Tubos versáteis e resistentes para conduzir seus projetos ao sucesso</TextRegular>
-            <TextRegular size='m' color='bg' weight={500}>Saiba Mais!</TextRegular>
+            <TextRegular size='m' color='bg' weight={500}>Ver Medidas</TextRegular>
           </ContentTextCard>
         </CardSwiper>
 

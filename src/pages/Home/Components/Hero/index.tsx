@@ -35,7 +35,7 @@ export const BannerMain = () => {
           <ContentText>
             <TitleText color='white' size='hero'>Sua construção <br /> merece o melhor suporte.</TitleText>
             <TextRegular color='white'>Conheça as opções de aço que trazem segurança e durabilidade para a sua obra.</TextRegular>
-            <Button bgColor='bg' btnLarge={false}><a href="https://api.whatsapp.com/send?phone=552227622717&text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento" target="_blank">Saiba Mais</a></Button>
+            <Button bgColor='bg' btnLarge={false}><a href="https://api.whatsapp.com/send?phone=552227622717&text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento" target="_blank">Fazer Pedido</a></Button>
           </ContentText>
         </ContentSwiper>
 
@@ -44,7 +44,7 @@ export const BannerMain = () => {
           <ContentText className='contentTextCenter'>
             <TitleText color='white' size='hero'>Não comprometa a resistência da sua construção.</TitleText>
             <TextRegular color='white'>Veja como o aço certo pode fortalecer cada detalhe do seu projeto</TextRegular>
-            <Button bgColor='bg' btnLarge={false}><a href="https://api.whatsapp.com/send?phone=552227622717&text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento" target="_blank">Saiba Mais</a></Button>
+            <Button bgColor='bg' btnLarge={false}><a href="https://api.whatsapp.com/send?phone=552227622717&text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento" target="_blank">Fazer Pedido</a></Button>
           </ContentText>
         </ContentSwiper>
 
@@ -53,7 +53,7 @@ export const BannerMain = () => {
           <ContentText>
             <TitleText color='white' size='hero'>Não deixe sua obra sem <br /> a estrutura certa.</TitleText>
             <TextRegular color='white'>Descubra como o aço de qualidade pode fazer toda a diferença no seu projeto</TextRegular>
-            <Button bgColor='bg' btnLarge={false}><a href="https://api.whatsapp.com/send?phone=552227622717&text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento" target="_blank">Saiba Mais</a></Button>
+            <Button bgColor='bg' btnLarge={false}><a href="https://api.whatsapp.com/send?phone=552227622717&text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento" target="_blank">Fazer Pedido</a></Button>
           </ContentText>
         </ContentSwiper>
       </Swiper>

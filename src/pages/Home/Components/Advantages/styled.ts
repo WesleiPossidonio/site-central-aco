@@ -80,23 +80,24 @@ export const AdvantageBox = styled.div`
   @keyframes moveY {
   0% {
     transform: translateY(0);
+    animation-timing-function: ease-out;
   }
-  20% {
+  25% {
     transform: translateY(-5px);
+    animation-timing-function: ease-in;
   }
-  40% {
+  50% {
     transform: translateY(-10px);
+    animation-timing-function: ease-out;
   }
-  60% {
+  75% {
     transform: translateY(-5px);
-  }
-  80% {
-    transform: translateY(0);
+    animation-timing-function: ease-in;
   }
   100% {
-    transform: translateY(5px);
+    transform: translateY(0);
+    animation-timing-function: ease-out;
   }
-
 }
 `;
 
@@ -126,9 +127,9 @@ export const BoxImage = styled.div<BoxImageProps>`
 
   @media (max-width: 768px) {
     width: ${({ widthImage }) =>
-      widthImage === "imgOne" ? "min(13rem, 40vw)" : "min(12rem, 35vw)"};
+      widthImage === "imgOne" ? "min(10rem, 40vw)" : "min(10rem, 35vw)"};
     height: ${({ widthImage }) =>
-      widthImage === "imgOne" ? "11rem" : "20rem"};
+      widthImage === "imgOne" ? "9rem" : "18rem"};
   }
 `;
 

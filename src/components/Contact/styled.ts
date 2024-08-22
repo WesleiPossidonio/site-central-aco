@@ -40,8 +40,8 @@ export const ContentContact = styled.div`
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 
   #Maps {
-    width: min(25rem, 25vw);
-    height: 14rem;
+    width: 100%;
+    height: 16rem;
     border: none;
     border-radius: 10px;
     margin-top: 1rem;
@@ -67,6 +67,7 @@ export const ContentInfo = styled.div`
 `;
 
 export const ContainerEmailAndWhatsapp = styled.div`
+ width: 50%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -76,6 +77,7 @@ export const ContainerEmailAndWhatsapp = styled.div`
   margin-top: 1rem;
 
   @media (max-width: 680px) {
+    width: 100%;
     align-items: center;
   }
 `;
@@ -123,17 +125,17 @@ export const ContentForm = styled.form`
     margin-top: 1rem;
   }
 
-  #reCaptcha {
-    align-self: flex-start;
-  }
+  #rc-anchor-container {
+      width: 10%;
+    }
 
-  .rc-anchor-normal {
-    width: 100%;
+  #reCaptcha {
+    min-width: 75%;
   }
 
   @media (max-width: 680px) {
     width: 100%;
-    padding: 1rem;
+    padding: 0;
   }
 
   @media (max-width: 320px) {
@@ -196,7 +198,6 @@ export const Span = styled.span`
   justify-content: center;
 
   border-radius: 99999px;
-
   padding: 0.7rem;
   background-color: ${({ theme }) => theme.colors["base-bg"]};
 

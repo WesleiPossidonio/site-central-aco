@@ -175,12 +175,13 @@ export const Contact = () => {
               {...register('subject_text')}
               error={errors.subject_text?.message}
             />
-
-            <ReCAPTCHA
-              sitekey={import.meta.env.VITE_RECAPTCHA_KEY}
-              onChange={handleCapcha}
-              id="reCaptcha"
-            />
+            <div id='reCaptcha'>
+              <ReCAPTCHA
+                sitekey={import.meta.env.VITE_RECAPTCHA_KEY}
+                onChange={handleCapcha}
+                id="reCaptcha"
+              />
+            </div>
             <Button bgColor="white" btnLarge={false}>Enviar</Button>
 
           </ContentForm>

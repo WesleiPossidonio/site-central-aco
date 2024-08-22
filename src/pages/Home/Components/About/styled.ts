@@ -51,22 +51,25 @@ export const ContainerImage = styled.div`
   @keyframes moveY {
   0% {
     transform: translateY(0);
+    animation-timing-function: ease-out;
   }
-  20% {
+  25% {
     transform: translateY(-5px);
+    animation-timing-function: ease-in;
   }
-  40% {
+  50% {
     transform: translateY(-10px);
+    animation-timing-function: ease-out;
   }
-  60% {
+  75% {
     transform: translateY(-5px);
-  }
-  80% {
-    transform: translateY(0);
+    animation-timing-function: ease-in;
   }
   100% {
-    transform: translateY(5px);
+    transform: translateY(0);
+    animation-timing-function: ease-out;
   }
+
 
 }
 `;
